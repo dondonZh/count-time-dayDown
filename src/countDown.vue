@@ -36,9 +36,9 @@
         if(this.endTime){
           try {
             const endTime = new Date(this.endTime.replace(/-/g,'/'));
-            console.log('endTime',endTime);
+           
             const nowTime = new Date();
-            console.log('nowTime',nowTime);
+          
             let leftTime = parseInt((endTime.getTime() - nowTime.getTime()) / 1000);
             let d = parseInt(leftTime / (24 * 60 * 60));
             let h = this.formate(parseInt(leftTime / (60 * 60) % 24));
